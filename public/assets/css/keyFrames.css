@@ -1,0 +1,24 @@
+@keyframes mainBannerImgMove {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes typing {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

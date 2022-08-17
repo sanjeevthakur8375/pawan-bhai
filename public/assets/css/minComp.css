@@ -1,0 +1,113 @@
+/* Fill Button Css Start Here  */
+.fillBtn{
+    background: var(--orange);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--transprent);
+    transition: .5s;
+    font-size: 20px;
+    display: inline-block;
+}
+.fillBtn:hover{
+    background: var(--transprent);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+/* Fill Button Css End Here  */
+
+/* color Button Css Start Here  */
+.colorBtn{
+    color: var(--orange);
+    border-bottom: 1px solid var(--transprent);
+    transition: .5s;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    padding: 5px 2px;
+}
+.colorBtn::after{
+    content: "";
+    background-color: var(--orange);
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.colorBtn:hover::after{
+    width: 100%;
+}
+/* color Button Css End Here  */
+
+/* Navigation Css Start Here  */
+.navigation ul li{
+    margin-right: 30px;
+}
+.navigation ul li a{
+    color: var(--gray);
+    position: relative;
+    padding: 5px 2px;
+    font-size: 20px;
+}
+.navigation ul li a:hover{
+    color: var(--orange);
+}
+.navigation ul li a::after{
+    content: "";
+    background-color: var(--orange);
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.navigation ul li a:hover::after{
+    width: 100%;
+}
+
+/* Navigation Css End Here  */
+
+/* BannerContent Css Start Here  */
+.bannerContent .img{
+    width: 50%;
+}
+.bannerContent .img img{
+    width: 100%;
+    animation: mainBannerImgMove 3s linear infinite;
+}
+.bannerContent .cotent{
+    width: 48%;  
+}
+.bannerContent .cotent p{
+    width: 366px;
+    margin-top: 23px;
+}
+.bannerContent .cotent .colorBtn{
+    margin-top: 10px;
+    width: 200px;
+}
+/* BannerContent Css End Here  */
+
+
+/* Socal Css Start Here  */
+.socal_Main a{
+    font-size: 40px;
+    margin-right: 10px;
+    transition: .5s;
+} 
+.socal_Main a:nth-child(1){
+    color: rgb(0, 0, 86);
+}
+.socal_Main a:nth-child(2){
+    color: rgb(0, 0, 255);
+}
+.socal_Main a:nth-child(3){
+    color: rgb(228, 0, 141);
+}
+.socal_Main a:hover{
+    color: var(--orange);
+} 
+/* Socal Css End Here  */
